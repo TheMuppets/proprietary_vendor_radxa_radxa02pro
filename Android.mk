@@ -6,9 +6,9 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),radxa02pro)
 
-$(call add-radio-file-sha1-checked,radio/bootloader-console.img,0c586768e5a8d970d2e46bb6a7c9df12e36f668e)
-$(call add-radio-file-sha1-checked,radio/bootloader-recovery.img,a4a15abc2f3c764f57cb1773bc31a1ce97a9fed2)
-$(call add-radio-file-sha1-checked,radio/bootloader.img,209443005b5bbd47937499f44b0261ef1dfb4c8c)
+$(call add-radio-file-sha1-checked,radio/bootloader-console.img,6538f225c0e78e76da8fe1a2f45da52dae1023a0)
+$(call add-radio-file-sha1-checked,radio/bootloader-recovery.img,2ea189b439f2e755d47301000f6797e15cef2e6a)
+$(call add-radio-file-sha1-checked,radio/bootloader.img,66005c88bcb0043f5307b93edb66d3445ff01dc9)
 $(call add-radio-file-sha1-checked,radio/misc.img,eb37860b2030f3d29ab61af22b96bae52bc7d42e)
 
 endif
