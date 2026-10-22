@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/radxa/radxa02pro
 
 PRODUCT_PACKAGES += \
+    arm.graphics-V1-ndk_platform \
     libGLES_mali
 
 PRODUCT_PACKAGES += \

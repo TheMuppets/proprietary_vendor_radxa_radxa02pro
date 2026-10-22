@@ -3,9 +3,31 @@
 //
 
 soong_namespace {
-    imports: [
-        "vendor/amlogic/g12-common",
-    ],
+}
+
+cc_prebuilt_library_shared {
+    name: "arm.graphics-V1-ndk_platform",
+    owner: "radxa",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/arm.graphics-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
